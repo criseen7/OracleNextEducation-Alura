@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>Programa- Numeros pares del 1-100</h1>
+
+<script>
+
+function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    print("Los numeros pares del 1-100 son: ")
+
+    for(let contador=1; contador<=100;contador++)
+        if(contador%2==0)
+            print(contador)
+    
+    print("Fin")
+
+</script>

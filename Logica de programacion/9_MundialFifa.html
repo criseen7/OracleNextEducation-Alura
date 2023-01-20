@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>Año Mundial FIFA</h1>
+
+<script>
+
+function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    var anhoMundial = 1930
+    var anhoLimit= parseInt(prompt("Ingresa el anho limite"))
+    while(anhoMundial<=anhoLimit){
+        print("Hubo o habra mundial de la FIFA en el anho: "+anhoMundial)
+        anhoMundial+=4
+    }
+    
+
+</script>

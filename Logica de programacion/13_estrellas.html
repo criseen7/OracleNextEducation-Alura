@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>Matriz con asteriscos</h1>
+
+<script>
+
+    function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    var nfilas = parseInt(prompt("Ingrese el numero de filas"))
+    var ncolumnas = parseInt(prompt("Ingrese el numero de columnas"))
+    for(let i=0; i<nfilas; i++){
+        for(let j=0; j<ncolumnas; j++)
+            document.write("*")
+        document.write("<br>")
+    }
+    endLine()
+    print("FIN")
+
+</script>

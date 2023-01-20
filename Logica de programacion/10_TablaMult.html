@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<h1>Tabla de multiplicar</h1>
+
+<script>
+
+function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    var tabla= parseInt(prompt("Ingresa el numero"))
+
+    for(var contador = 1; contador<=10;contador++){
+        print(tabla +" * "+ contador +" = "+ (tabla*contador))
+    }
+
+</script>

@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    function cuadro(x,y,color){
+        pincel.fillStyle = color //propieties
+        pincel.fillRect(x,y,50,50) //function
+        pincel.strokeStyle = "black"
+        pincel.strokeRect(x,y,50,50)
+    }
+
+    var pantalla = document.querySelector("canvas")
+    var pincel = pantalla.getContext("2d")
+
+    for(let x=0; x<=600;x+=50){
+        cuadro(x,0,"red");
+        cuadro(x,50,"yellow");
+        cuadro(x,100,"green");
+    }
+    
+</script>

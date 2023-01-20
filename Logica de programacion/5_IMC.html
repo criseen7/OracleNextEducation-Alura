@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>Progama Calculo IMC</h1>
+
+<script>
+    function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+    function calculaIMC(masa,altura){
+        return (masa/Math.pow(altura,2))
+    }
+ 
+    nombre = prompt("Ingrese su nombre")
+    masa1 = prompt(nombre +", Ingrese su peso")
+    altura1 = prompt(nombre +", Ingrese su altura")
+    imc=calculaIMC(masa1,altura1)
+    print(nombre +", su IMC = "+imc)
+   
+    if (imc<18.5)
+        print("Tu IMC esta por debajo de lo recomendado :c")
+    else if (imc>=18.5 && imc<25)
+        print("Tu IMC esta normal c:")
+    else if (imc>=25 && imc<30)
+        print("Tienes sobre peso :/")
+    else
+        print("Tienes obesidad :c")
+
+</script>

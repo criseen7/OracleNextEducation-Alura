@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>Juego de Adivinacion</h1>
+
+<script>
+
+    function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    var numeroPensado = Math.round(Math.random()*10)
+    var nIntentos = 3
+    var contador=1
+    var flag = false
+
+    while(contador <= nIntentos){
+        var numeroLanzado = parseInt(prompt("Ingrese un numero del 0 al 10"))
+        if(numeroLanzado == numeroPensado){
+            alert("Acertaste! en el intento "+contador)
+            flag = true
+            break
+        }else
+            alert("Fallaste!")
+        contador++
+    }
+    if(flag==false)
+        print("Perdiste :c, el numero pensado era "+numeroPensado)
+
+</script>

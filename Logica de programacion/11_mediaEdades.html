@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1>Programa que calcula la media de edades de una fmilia</h1>
+
+<script>
+
+function endLine(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function print(message){
+        document.write(message)
+        endLine()
+    }
+
+    var nMiembros = parseInt(prompt("Ingrese el numero de miembros de su familia"))
+    var contador = 1
+    var mediaEdad = 0
+
+    while(contador <= nMiembros){
+        edad = parseInt(prompt("Ingrese la edad del miembro "+contador))
+        mediaEdad += edad
+        contador++
+    }
+    mediaEdad /= nMiembros
+    print("La media de las edades es: "+mediaEdad)
+
+</script>
