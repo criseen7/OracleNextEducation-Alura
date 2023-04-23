@@ -1,4 +1,4 @@
-package Polimorfismo;
+//package Polimorfismo;
 
 public class testGerente {
     public static void main(String[] args) {

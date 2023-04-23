@@ -1,8 +1,8 @@
-package Polimorfismo;
+//package Polimorfismo;
 
 public class Contador extends Funcionario{
     
-    @Override
+	@Override
     public double getBonificacion() {
         return 200;
     }

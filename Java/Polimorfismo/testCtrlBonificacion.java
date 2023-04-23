@@ -1,8 +1,8 @@
-package Polimorfismo;
+//package Polimorfismo;
 
 public class testCtrlBonificacion{
     public static void main(String[] args) {
-        Funcionario cris = new Funcionario();
+        Funcionario cris = new Contador();
         cris.setSalario(2000);
         Gerente xime = new Gerente();
         xime.setSalario(10000);

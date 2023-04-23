@@ -1,8 +1,8 @@
-package Polimorfismo;
+//package Polimorfismo;
 
 public class testFuncionario {
     public static void main(String[] args) {
-        Funcionario cris = new Funcionario();
+        Funcionario cris = new Contador();
         cris.setNombre("Cristofer");
         cris.setDocumento("56665");
         cris.setSalario(2000);
