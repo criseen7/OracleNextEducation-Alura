@@ -10,6 +10,6 @@ public class testReferencias {
         gerente.setSalario(10000);
 
         //funcionario.iniciarSesion();// -> no funciona debido apesar de ser un nuevo gerente, tiene la referencia a la clase Funcion
-        System.out.println(gerente.iniciarSesion());
+        System.out.println(gerente.iniciarSesion("Alura"));
     }
 }

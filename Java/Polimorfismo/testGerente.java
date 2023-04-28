@@ -9,6 +9,6 @@ public class testGerente {
         gerente.setClave("Alura");
         gerente.setTipo(1);
         System.out.println(gerente.getBonificacion());
-        System.out.println(gerente.iniciarSesion());
+        System.out.println(gerente.iniciarSesion("Alura"));
     }
 }
