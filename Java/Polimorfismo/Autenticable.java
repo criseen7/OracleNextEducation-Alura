@@ -1,18 +1,8 @@
 
-public class FuncionarioAutenticable extends Funcionario {
+public interface Autenticable {
 
-	private String clave;
-
-    public void setClave(String Clave){
-        this.clave=Clave;
-    }
-    public boolean iniciarSesion(String clave){
-        return clave == "Alura";
-    }
-	@Override
-	public double getBonificacion() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public void setClave(String Clave);
+    public boolean iniciarSesion(String clave);
     
-}
+}//La interface no puede tener metodos implementados (con cuerpo)
+//toda interface es abstracta y no puede extender de una clase
