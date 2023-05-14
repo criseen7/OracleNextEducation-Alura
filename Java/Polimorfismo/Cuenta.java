@@ -19,12 +19,12 @@ public abstract class Cuenta {
     }
     
     public abstract void depositar(double dinero);
-    public boolean retirar(double dinero) {
-    	if(dinero<=this.saldo) {
-    		this.saldo-=dinero;
-    		return true;
+
+    public void retirar(double dinero) {
+    	if(this.saldo<dinero) {
+    		throw new SaldoInsuficienteException("No tienes saldo");
     	}
-    	return false;
+    	this.saldo-=dinero;
     }
     public boolean transferir(double dinero,Cuenta cuenta) {
     	if(this.saldo>=dinero) {

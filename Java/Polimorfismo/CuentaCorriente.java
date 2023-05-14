@@ -4,9 +4,9 @@ public class CuentaCorriente extends Cuenta {
 		super(agencia);
 	}
 	@Override//sobreescribe el metodo de la clase padre
-	public boolean retirar(double dinero) {
+	public void retirar(double dinero) {
 		double comision = 0.2;
-		return super.retirar(dinero + comision);
+		super.retirar(dinero + comision);
 	}
 	@Override
 	public void depositar(double dinero) {
