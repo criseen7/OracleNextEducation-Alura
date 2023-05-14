@@ -8,13 +8,13 @@ public class Gerente extends Funcionario implements Autenticable {//herencia
 
 	@Override
 	public boolean iniciarSesion(String clave) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
 	@Override
 	public void setClave(String Clave) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 }
