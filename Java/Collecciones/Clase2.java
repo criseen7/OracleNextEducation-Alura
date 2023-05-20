@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Clase {
+class Clase2 {
     public static void main(String[] args) {
         String variable1 = "clase 1";
         String variable2 = "clase 2";
