@@ -24,7 +24,7 @@ public class Clase18 {
 
         curso1.getAlumnoMap().forEach((codigo, alumno) ->{
             System.out.println(alumno);
-        });;
+        });
     
     }
 }
