@@ -1,6 +1,5 @@
-import java.util.Optional;
 
-public class Clase17 {
+public class Clase18 {
     public static void main(String[] args) {
         Curso curso1 = new Curso("Historia", 30);
 
@@ -19,16 +18,13 @@ public class Clase17 {
         curso1.addAlumno(alumno5);
         curso1.addAlumno(alumno6);
         curso1.addAlumno(alumno7);
-        
-        //curso1.getAlumnos().forEach(alumno -> System.out.println(alumno));
-        
-        Optional<Alumno> alumno = curso1.getAlumnos().stream().filter(a -> "003".equalsIgnoreCase(a.getCodigo())).findFirst();
-        if(alumno.isPresent()){
-            System.out.println(alumno.get());
-        }
 
         Alumno alumnoMap = curso1.getAlumnoMap().get("003");
         System.out.println(alumnoMap);
+
+        curso1.getAlumnoMap().forEach((codigo, alumno) ->{
+            System.out.println(alumno);
+        });;
     
     }
 }
